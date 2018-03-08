@@ -3,6 +3,7 @@ Google reCaptcha implementation for Reactjs.
 
 How to use:
 
+```
 import CaptchaComponent from '<path-to-component>';
 ...
 const invokeWhenCaptchaResponseWithSuccess = () => {
@@ -20,5 +21,6 @@ return (
         ...
     </div>
 );
+```
 
 More info: http://frontninja.pl/react/reactjs/2018/03/06/react-captcha-component.html
