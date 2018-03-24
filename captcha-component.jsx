@@ -18,7 +18,8 @@ class CaptchaHandler {
             this.domId,
             {
                 'sitekey': this.siteKey,
-                'callback': this.callback
+                'callback': () => {this.callback(true)},
+                'error-callback': () => {this.callback(false)}
             }
         );
     }
