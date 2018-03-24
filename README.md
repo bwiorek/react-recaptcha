@@ -6,8 +6,8 @@ How to use:
 ```
 import CaptchaComponent from '<path-to-component>';
 ...
-const invokeWhenCaptchaResponseWithSuccess = () => {
-    alert("Success!");
+const invokeOnCaptchaResponse = (isSuccess) => {
+    /*odblokuj/zablokuj funkcjonalność.*/
 };
 ...
 return (
@@ -16,7 +16,7 @@ return (
         <CaptchaComponent
             domId="<custom-captcha-id-here>"
             siteKey="<captcha-sitekey-here>"
-            callback={invokeWhenCaptchaResponseWithSuccess}
+            callback={invokeOnCaptchaResponse}
         />
         ...
     </div>
